@@ -11,7 +11,11 @@ public class Test {
         int z = x + y ;
         System.out.println(z);
 
-        if (x + y > z );
-        System.out.println("cccccc");
+
+
+
+        double d = 4270;
+        d = d / 1000 * 1000;
+        System.out.println(d);
     }
 }
