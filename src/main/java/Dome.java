@@ -3,7 +3,7 @@
  */
 public class Dome {
     public static void main(String[] args) {
-        boolean a1 = true;  //fales   挚友两个数值
+        boolean a1 = true;  //fales   只有两个数值
 
         float a = 1.1F;//需要声明用float    加f   默认double
         double b = 2.2;
