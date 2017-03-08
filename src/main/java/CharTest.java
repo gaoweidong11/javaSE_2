@@ -3,17 +3,17 @@
  */
 public class CharTest {
     public static void main(String[] args) {
-        char c = 123;
+        char c = 6;   //0-65535
         System.out.println((int)c);//整数    加小括号  强制转换
 
         char c1 = 'a';
         System.out.println(c1);//单个字符
 
-        char c2 = '\324';
+        char c2 = '\124';
         System.out.println(c2);//3位八进制字符
 
         char c3 = '\u4e00';
-        System.out.println(c3);//4位十六位字符
+        System.out.println(c3);//4位十六进制字符
 
         char c4 = '\t';
         System.out.println(c4);//标签

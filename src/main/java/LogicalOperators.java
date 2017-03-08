@@ -3,14 +3,14 @@
  */
 public class LogicalOperators {
     public static void main(String[] args) {
-        boolean a = true;
-        boolean b = false;
+        boolean a = false;
+        boolean b = true;
 
         System.out.println(a ^ b);
 
         // & ab 都为 true  结果为 true
         // | ab 都为 false 结果为 false
-        // ^ ab 不相同 结果为 true （异）
+        // ^ ab 不相同 结果为 true （异） 相同  结果为false
         //！ 取反
 
         int x = 1;
