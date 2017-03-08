@@ -16,7 +16,7 @@ public class LogicalOperators {
         int x = 1;
         int y = 2;
 
-        boolean z = (x > y) && (y++ > x);
+        boolean z = (x < y) && (y++ > x);
 
         System.out.println(z);
         System.out.println(y);
