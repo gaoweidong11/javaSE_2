@@ -3,7 +3,7 @@
  */
 public class Five {
     public static void main(String[] args) {
-        int grade = 59; // n.\ 年级；等级；成绩；级别；阶段
+        int grade = 59;
         if (grade >= 90) {
             System.out.println("A");
         } else
