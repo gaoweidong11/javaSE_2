@@ -3,7 +3,17 @@
  */
 public class CeShi {
     public static void main(String[] args) {
-        int x=2, y=3, z=4;
-        System.out.println(z -= --y - x--);
+        for (int i = 100; i < 200; i++) {
+            boolean b = true;
+            for (int j = 2; j < i; j++) {
+                if (j % i == 0) {
+
+                    b = false;
+                }
+            }
+            if (b) {
+                System.out.println(i);
+             }
+        }
     }
 }

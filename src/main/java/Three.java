@@ -4,16 +4,18 @@
 public class Three {
     public static void main(String[] args)
     {
-        for(int i=100;i<=999;i++) {
-            int  a, b, c;
+        for(int i = 1000; i < 10000; i++) {
+            int  g, s, b,q;//g各位，s十位，b百位,q千位。
 
-            c =i / 100;
+            q = i / 1000;
 
-            b =( i - c * 100) / 10;
+            b = i / 100 % 10;
 
-            a = i - c * 100 - b * 10;
+            s  = i / 10 % 10;
 
-            if(i == a * a * a + b * b * b + c * c * c) {
+            g = i % 10;
+
+            if(i == g * g * g * g + s * s * s * s + b * b * b * b + q * q * q * q) {
 
                 System.out.println(i);
             }
