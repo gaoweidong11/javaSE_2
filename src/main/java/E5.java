@@ -1,7 +1,7 @@
 /**
  * Created by 高伟冬 on 2017/3/8.
  */
-public class Five {
+public class E5 {
     public static void main(String[] args) {
         int grade = 59;
         if (grade >= 90) {

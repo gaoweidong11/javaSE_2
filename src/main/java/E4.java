@@ -1,7 +1,7 @@
 /**
  * Created by 高伟冬 on 2017/3/8.
  */
-public class Four {
+public class E4 {
     public static void main(String[] args) {
         int i = 90;                         //还需加深了解
         int k = 2;
