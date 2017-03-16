@@ -5,7 +5,7 @@ public class E52 {
     /**
      *
      * @param n 盘子的数目
-     * @param origin 源座
+     * @param origin 源座 -
      * @param assist 辅助座
      * @param destination 目的座
      */

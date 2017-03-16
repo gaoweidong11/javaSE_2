@@ -1,52 +1,70 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 /**
  * Created by 高伟冬 on 2017/3/15.
  */
 public class Vehicle {
+    String name;
+    double weight;
+    double peice;
+    char color;
 
-     int speed;//速度
-     String kind;
-     String color;//颜色
+    public void start() {
+        System.out.println("Vehicle is starting");
 
+    }
+    public void stop() {
+        System.out.println("Vehicle is stopped");
 
+    }
+}
 
-    public int getSpeed() {
-        return speed;
+class Bicycle extends Vehicle {//自行车
+    int wheel;//轮
+
+    public void Single() {  //单人
+        System.out.println("Riding alone");
+    }
+}
+
+class Ship extends Vehicle {  //船
+    String Loading;//载物
+
+    public void water() {   //水里
+        System.out.println("Ships can be in the water");
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
+}
 
-    public String getColor() {
-        return color;
-    }
+class Plane extends Vehicle {   //飞机
+    int speed;//     km/h    速度
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+        public void flight() {   //飞行
+            System.out.println("Plane flight");
+        }
+}
 
-    public String getKind() {
-        return kind;
-    }
-
-    public void setKind(String kind) {
-        this.kind = kind;
-    }
-
-    public Vehicle(){
-        this.setSpeed(20);  //设定速度
-        this.setKind("自行车");
-        this.setColor("红");
-    }
+class VehicleTest {
 
     public static void main(String[] args) {
-        Vehicle v = new Vehicle();
-        System.out.println("颜色："+v.getKind()+"    类型："+v.getKind()+"    速度："+v.getSpeed());
-        v.setColor("黄");
-        v.setKind("汽车");
-        v.setSpeed(60);
-        System.out.println("颜色："+v.getKind()+"    类型："+v.getKind()+"    速度："+v.getSpeed());
-    }
+        Vehicle vehicle = new Vehicle();
+        System.out.println(vehicle.name);
+        vehicle.start();
+        System.out.println(vehicle.weight);
+        vehicle.stop();
 
+        Bicycle bicycle = new Bicycle();
+        System.out.println(bicycle.name);
+        bicycle.start();
+
+        Ship ship = new Ship();
+        System.out.println(ship.Loading);
+        ship.water();
+
+        Plane plane = new Plane();
+        System.out.println(plane.speed);
+        plane.flight();
+
+    }
 
 }
