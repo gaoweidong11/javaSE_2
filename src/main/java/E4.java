@@ -8,10 +8,10 @@ public class E4 {
         System.out.print(i + "=");
         while (i > k) {
             if (i % k == 0) {
-                System.out.print(k + "×");
+                System.out.print(k + "*");
                 i = i / k;
             }
-            if (i % k != 0) {               //  ？
+            if (i % k != 0) {
                 k++;
             }
         }
