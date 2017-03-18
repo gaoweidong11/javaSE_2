@@ -35,7 +35,7 @@ class Person {
 }
 
 class Student extends Person {
-    int StudentID;
+    int StudentI;
 
     public Student(String name, String sex, int age, int studentID) {
         super(name, sex, age);
