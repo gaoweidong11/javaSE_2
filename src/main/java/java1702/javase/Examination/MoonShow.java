@@ -22,14 +22,14 @@ public class MoonShow {
     }
 
     //1，建立显示月份、年份。和分隔线。显示星期天到星期六。
-    public static void monthYear(int month,int year){
+    private static void monthYear(int month, int year){
         String [] arr = {"一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"};
         System.out.println("\t\t"+arr[month-1]+"  "+year+"\n-------------------------------------");
         System.out.println("  Sun  Mon  Tue  Wed  Thu  Fri  Sat");
     }
 
     //2，计算输入年份的1月1号距离1800年的1月1号的总天数。
-    public static int totalday(int year){
+    private static int totalday(int year){
         int totalday = 0;
         for(int x = 1800; x < year; x++){
             if(x % 400 == 0 || (x % 4 == 0 && x % 100 != 0))
@@ -41,7 +41,7 @@ public class MoonShow {
     }
 
     //3，计算月份的天数。
-    public static int monthDays(int month,int year){
+    private static int monthDays(int month, int year){
         int sum = 0;
 
         switch(month){
@@ -62,18 +62,17 @@ public class MoonShow {
     }
 
     //4，计算输入年份一月一号是星期几。
-    public static int weekday(int month, int year){
+    private static int weekday(int month, int year){
         int sum = 0;
         for(int a = 1; a< month;a++){
             sum += monthDays(a,year);
         }
         int totalday = sum + totalday( year);
-        int weekday = (totalday + 3) % 7;
-        return weekday;
+        return (totalday + 3) % 7;
     }
 
     //5，输出月份天数表格。
-    public static void monthBiao(int month,int year){
+    private static void monthBiao(int month, int year){
         for(int a = 1;a<=weekday(month,year);a++){
             System.out.print("     ");
         }

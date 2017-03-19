@@ -25,7 +25,7 @@ class calendar {
             Renyear = false;
         }
         //记录当月的天数
-        int day = 0;
+        int day;
         switch (month){
             case 1:
                 day = 31;

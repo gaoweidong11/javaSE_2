@@ -30,7 +30,7 @@ public class Cal {
 
     /**
      * 得到这个月有多少天，考虑闰年的问题
-     * @param date
+     * @paramdate
      */
     private static int getDays(Calendar cal) {
         int year = cal.get(Calendar.YEAR);
