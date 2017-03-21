@@ -42,7 +42,7 @@ public class E44 {
                 if (a % i == 0) {// 若能被整除，则说明不是素数，返回false
 
                     flag = false;
-                    break;// 跳出循环
+                          break;// 跳出循环
                 }
             }
         }
