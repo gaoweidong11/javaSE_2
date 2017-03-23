@@ -69,7 +69,7 @@ public class Cal {
         int i = 0;
         int space = cal.get(Calendar.DAY_OF_WEEK) - 1;
         for(; i<space; i++) {
-            System.out.print("     ");
+            System.out.print("       ");
         }
         int day = cal.get(Calendar.DAY_OF_MONTH);
         for(; i<getDays(cal) + space; i++) {

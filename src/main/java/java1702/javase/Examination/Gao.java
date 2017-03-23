@@ -99,7 +99,7 @@ class calendar {
         }
 
         int blank = sum % 7 + 1;//blank开始输出的空格数 +1是从星期天开始；
-        System.out.println("  Sun  Mon  Tue  Wed  Thu  Fri  Sat");
+        System.out.println("Sun Mon Tue Wed Thu Fri Sat");
 
         int temp = 1;
         for (int i = 0; i < blank; i++) {
