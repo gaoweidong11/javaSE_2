@@ -18,7 +18,7 @@ public class E6 {
         System.out.println(gongbei(min, max));
     }
     // a与b的最大公约数
-    public static int gongyue(int min, int max) {
+    private static int gongyue(int min, int max) {
         while(max%min!=0){
 /*运用递归调用将求余之后的值作为min
 * 将之前的min作为max直到求余值为0为止结束循环*/
@@ -29,7 +29,7 @@ public class E6 {
         return min;
     }
     // a与b的最小公倍数
-    public static int gongbei(int min, int max) {
+    private static int gongbei(int min, int max) {
         //求公倍数就是将两个数相乘除以最大公约数
         return min* max / gongyue(min, max);
     }
