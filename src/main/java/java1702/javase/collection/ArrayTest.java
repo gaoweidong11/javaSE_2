@@ -23,5 +23,6 @@ public class ArrayTest {
 
        ArrayTest[] arrayTests1 = new ArrayTest[2];
         System.out.println(arrayTests1[0]);
+
     }
 }
