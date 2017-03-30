@@ -1,5 +1,7 @@
 package java1702.javase.basic;
 
+import java.util.Scanner;
+
 /**
  * Created by 高伟冬 on 2017/3/29.
  * javaSE_2
@@ -14,7 +16,7 @@ public class E7 {
         int spaceCount = 0;//空格键个数
         int numCount = 0;//数字个数
         int otherCount = 0;//其他字符个数
-        java.util.Scanner scan = new java.util.Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
         char[] ch = str.toCharArray();
         for (char aCh : ch) {
