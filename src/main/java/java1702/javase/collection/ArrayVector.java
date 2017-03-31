@@ -8,8 +8,8 @@ package java1702.javase.collection;
  */
 public class ArrayVector {
     // void add(String element)    0
-    // String remove(int index)
-    // String set(int index, String element)
+    // String remove(int index)    0
+    // String set(int index, String element)  0
     // String get(int index)       0
     // int size()                  0
     // int capacity()              0
@@ -24,12 +24,12 @@ public class ArrayVector {
         capacity = DEFAULT_CAPACITY;
     }
 
-    public ArrayVector(int initialCapacity) {
+    private ArrayVector(int initialCapacity) {
         strings = new String[initialCapacity];
         capacity = initialCapacity;
     }
 
-    public void add(String string) {
+    private void add(String string) {
         if (size == capacity) {
             String[] newStrings = new String[capacity * 2];
             capacity *= 2;
@@ -48,11 +48,11 @@ public class ArrayVector {
         return strings[index];
     }
 
-    public int size() {
+    private int size() {
         return size;
     }
 
-    public int capacity() {
+    private int capacity() {
         return capacity;
     }
 
