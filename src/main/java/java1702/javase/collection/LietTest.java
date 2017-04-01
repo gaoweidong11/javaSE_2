@@ -20,7 +20,7 @@ public class LietTest {
         arrayList.add("hello");
         arrayList.add("hello");//add   增加
         System.out.println(arrayList.size()); //大小
-        System.out.println(arrayList.get(0));//得到  到达
+
         System.out.println(arrayList.contains("hello"));//包含   布尔类型
         System.out.println(arrayList.indexOf("hello"));//第一次出现的地方
         System.out.println(arrayList.lastIndexOf("hello"));//最后一次出现的地方
