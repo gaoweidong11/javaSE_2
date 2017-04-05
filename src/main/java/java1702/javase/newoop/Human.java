@@ -1,6 +1,5 @@
 package java1702.javase.newoop;
 
-import java.util.concurrent.ScheduledFuture;
 
 /**
  * Created by 高伟冬 on 2017/4/1.
@@ -14,6 +13,7 @@ public class Human {
     private int age;
     private double height;
     private double weight;
+
 
     public Human(String name, char genher, int age, double height, double weight) {
         this.name = name;

@@ -1,9 +1,6 @@
 package java1702.javase.newoop;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+import java.io.*;
 
 /**
  * Created by 高伟冬 on 2017/4/1.
