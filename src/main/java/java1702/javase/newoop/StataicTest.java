@@ -8,7 +8,7 @@ package java1702.javase.newoop;
  */
 public class StataicTest {
     private static int i;
-    private int j ;
+    private int j;
 
     public static void m() {
 
