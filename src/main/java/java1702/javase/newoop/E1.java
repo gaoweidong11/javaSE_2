@@ -24,7 +24,7 @@ public class E1 {
 
         for (i = 0; i < M; i++)
             for (j = 0; j < M; j++)
-                 a[i][j] = Double.parseDouble(br.readLine());
+                a[i][j] = Double.parseDouble(br.readLine());
         for (i = 0; i < M; i++) {
             main_product *= a[i][i];
             vice_product *= a[i][M - i - 1];
