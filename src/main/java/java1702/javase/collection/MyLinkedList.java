@@ -1,7 +1,5 @@
 package java1702.javase.collection;
 
-import java1702.javase.Examination.First;
-
 /**
  * Created by 高伟冬 on 2017/4/11.
  * javaSE_2
@@ -66,3 +64,4 @@ public class MyLinkedList {
     }
 }
 
+//一脸懵笔！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
