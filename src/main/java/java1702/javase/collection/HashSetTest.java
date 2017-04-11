@@ -14,7 +14,7 @@ public class HashSetTest {
         strings.add("hi");
         strings.add("hello");
         strings.add("test");
-
+         //无序  效率高  没有get 方法
         System.out.println(strings.size());
         for (String string : strings) {
             System.out.println(string);
