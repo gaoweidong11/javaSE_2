@@ -16,6 +16,7 @@ public class LinkedHashMapTest {
         map.put(1, "a");
         map.put(-1, "b");
         map.put(100, "c");
+
         //按元素的添加顺序  有序
 
         System.out.println(map.size());
