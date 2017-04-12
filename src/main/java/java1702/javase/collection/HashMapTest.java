@@ -10,11 +10,14 @@ import java.util.*;
  */
 public class HashMapTest {
     public static void main(String[] args) {
-       HashMap<Integer,String> map = new HashMap<>();
-        map.put(1,"a");
-        map.put(2,"b");
-        map.put(3,"b");
-        map.put(4,"c");
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "a");
+        map.put(2, "b");
+        map.put(3, "b");
+        map.put(4, "c");
+
+        //无序  键和值 可以为null
+        //Hashtable  键和值不可以为null
 
         System.out.println(map.size());
 
@@ -27,7 +30,7 @@ public class HashMapTest {
             System.out.println(s);
         }
         for (Map.Entry<Integer, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey()+"-》"+entry.getValue());
+            System.out.println(entry.getKey() + "-》" + entry.getValue());
         }
     }
 }
