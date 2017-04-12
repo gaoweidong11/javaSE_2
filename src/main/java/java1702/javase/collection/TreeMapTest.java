@@ -14,6 +14,8 @@ public class TreeMapTest {
         map.put(1, "a");
         map.put(2, "b");
 
+        //键不能为null  值可以为null
+
         System.out.println(map.size());
         System.out.println(map.get(2));
 
