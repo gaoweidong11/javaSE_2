@@ -1,7 +1,6 @@
 package java1702.javase.collection;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.ListIterator;
 
 /**
