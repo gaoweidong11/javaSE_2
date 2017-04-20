@@ -10,14 +10,23 @@ import java.io.*;
  */
 public class InputStreamTest {
     public static void main(String[] args) {
+            InputStream inputStream = null;
         try {
-            InputStream inputStream = new FileInputStream("test");
+             inputStream = new FileInputStream("test");
             int i;
             while ((i = inputStream.read()) != -1) {
                 System.out.print((char)i);
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }
