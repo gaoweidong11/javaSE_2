@@ -1,5 +1,7 @@
 package java1702.javase.io;
+
 import java.io.*;
+
 /**
  * Created by 高伟冬 on 2017/4/20.
  * javaSE_2
@@ -8,23 +10,15 @@ import java.io.*;
  */
 public class ReaderTest {
     public static void main(String[] args) {
-        Reader reader = null;
-        try {
-            reader = new FileReader("test");
+
+        try (Reader reader = new FileReader("test");) {
+
             int i;
             while ((i = reader.read()) != -1) {
                 System.out.print((char) i);
             }
         } catch (java.io.IOException e) {
             e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
     }
 }
