@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var patt1=/[abc]/gi;//	查找方括号之间的任何字符。
+        console.log(patt1.exec("abcdefg"));
+        var patt2=/[^abc]/gi;//查找任何不在方括号之间的字符。
+        console.log(patt2.exec("abcdefg"));
+        var patt3=/[0-9]/gi;//查找任何从 0 至 9 的数字。
+        console.log(patt3.exec("abc23defg4"));
+        var patt4=/[A-Z]/gi;//	查找任何从大写 a 到小写 z 的字符
+        console.log(patt4.exec("abCdAfg"));
+        var patt5=/[a-z]/gi;//	查找任何从大写 A 到大写 Z 的字符。
+        console.log(patt5.exec("abFDXCdefg"));
+        var patt6=/[A-z]/gi;//查找任何从大写 A 到小写 z 的字符。
+        console.log(patt6.exec("abcdefgCVBER"));
+        var patt7=/[arcw]/gi;//查找给定集合内的任何字符。
+        console.log(patt7.exec("arcwdefgaacw"));
+        var patt8=/[^acd]/gi;//查找给定集合外的任何字符。
+        console.log(patt8.exec("abcdefg"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

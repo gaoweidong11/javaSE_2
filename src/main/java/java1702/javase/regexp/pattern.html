@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //语法： /pattern/attributes       /模式/属性
+
+        var patt1 = /e/;
+        console.log(patt1.test("hello"));
+        var patt2=/e/g;
+        patt1.compile('l','g');//g->global   全部   执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）
+
+        var result=patt1.exec('hello');
+        do {
+            console.log(result);
+            result=patt1.exec('hello');
+        }while (result != null);
+        //m  	执行多行匹配。
+        var patt3=/e/i;//i-> 执行对大小写不敏感的匹配
+        console.log(patt3.test('HELLO'));
+
+        var patt4=/w3school/i;
+        console.log('Visit W3School...'.match(patt4));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

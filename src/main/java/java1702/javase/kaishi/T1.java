@@ -22,9 +22,6 @@ public class T1 {
         System.out.println("输入一个整数：");
         int k =scanner.nextInt();
         System.out.println(k);
-
-
-//        System.out.println(sum);
     }
-
 }
+

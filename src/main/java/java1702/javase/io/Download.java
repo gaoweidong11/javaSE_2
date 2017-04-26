@@ -10,14 +10,14 @@ import java.net.*;
  * 星期五
  */
 public class Download {
-    private static final String IMAGE_URL = "http://s.cn.bing.net/th?id=OJ.58V1JdyCq3tEwg&pid=MSNJVFeeds/1.2.tif";
+    private static final String IMAGE_URL = "";//文件地址
 
     public static void main(String[] args) {
         try {
             URL url = new URL(IMAGE_URL);
             try (
                     InputStream inputStream = url.openStream();
-                    OutputStream outputStream = new FileOutputStream("test.png")
+                    OutputStream outputStream = new FileOutputStream("")//读出
             ) {
                 System.out.println(inputStream.available());
                 int i;
