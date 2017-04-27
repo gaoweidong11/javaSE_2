@@ -19,7 +19,7 @@ public class E144 {
     public static void test() {
         String tempStr = "";
         for (int i = 0; i < 5000; i++) {
-            double a = Math.random() * 9999;
+            double a = Math.random() * 9999;//random  随机
             int aa = (int) a + 1;
             tempStr += aa + "\r\n";
         }
@@ -30,7 +30,7 @@ public class E144 {
     private static void outputData(String text) {
         try {
             BufferedWriter rw = new BufferedWriter(new OutputStreamWriter(
-                    new FileOutputStream("c:\\a.txt"), "UTF-8"));
+                    new FileOutputStream("a.txt"), "UTF-8"));
             rw.write(text);
             rw.close();
         } catch (Exception e) {
@@ -43,7 +43,7 @@ public class E144 {
         int leng = 0;
         int test[] = new int[5000];
         try {
-            BufferedReader input = new BufferedReader(new FileReader("c:\\a.txt"));
+            BufferedReader input = new BufferedReader(new FileReader("a.txt"));
             while ((s = input.readLine()) != null && leng < 5000) {
                 test[leng] = Integer.parseInt(s);
                 leng++;
