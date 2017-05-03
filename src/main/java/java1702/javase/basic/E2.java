@@ -2,6 +2,9 @@ package java1702.javase.basic;
 
 /**
  * Created by 高伟冬 on 2017/3/8.
+ * javaSE_2
+ * 8:37
+ * 星期二
  */
 
 //	判断101-200之间有多少个素数，并输出所有素数。

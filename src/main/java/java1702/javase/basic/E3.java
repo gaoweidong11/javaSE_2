@@ -2,6 +2,9 @@ package java1702.javase.basic;
 
 /**
  * Created by 高伟冬 on 2017/3/8.
+ * javaSE_2
+ * 8:35
+ * 星期二
  */
 public class E3 {
     public static void main(String[] args)

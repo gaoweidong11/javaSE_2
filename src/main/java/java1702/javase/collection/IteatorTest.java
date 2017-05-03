@@ -15,27 +15,23 @@ public class IteatorTest {
         list.add("a");
         list.add("b");
 
-        Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (String aList : list) {
+            System.out.println(aList);
         }
 
         TreeSet<String> set = new TreeSet<>();
         set.add("b");
         set.add("a");
 
-        Iterator<String> iterator1 = set.iterator();
-        while (iterator1.hasNext()) {
-            System.out.println(iterator1.next());
+        for (String aSet : set) {
+            System.out.println(aSet);
         }
 
         HashMap<Integer, String> map = new HashMap<>();
         map.put(1, "a");
         map.put(2, "bcd");
 
-        Iterator<Integer> iterator2 = map.keySet().iterator();
-        while (iterator2.hasNext()) {
-            int key = iterator2.next();
+        for (Integer key : map.keySet()) {
             System.out.println(key + ">" + map.get(key));
         }
     }
