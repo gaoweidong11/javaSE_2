@@ -1,13 +1,14 @@
 package java1702.javase.data;
+
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+
 /**
  * Created by 高伟冬 on 2017/5/9.
  * javaSE_2
@@ -29,15 +30,12 @@ public class Spider {
         Document document = Jsoup.connect(INIT_URL).cookie("lianjia_uuid", "fe547e4f-b83f-49be-9708-5af2d41ebef4").get();
         Elements elements = document.select("div[data-role=ershoufang]").first().select("a[href^=/ershoufang]");
         for (Element element : elements) {
-            Thread thread = new Thread(new Spider(element));
+            Thread thread = new Thread((Runnable) new Spider(element));
             thread.start();
         }
     }
 
-    @Override
-
-
-
+//    @Override
     public void run() {
         String areaUrl = element.attr("href");
         try {
