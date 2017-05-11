@@ -17,9 +17,12 @@ import java.net.SocketTimeoutException;
  * 星期四
  */
 public class Spider implements Runnable {
+
 //    private static final String[] CITIES = {"bj", "tj"};
 
     private static final String URL = "http://bj.lianjia.com/ershoufang/";
+    private static final String UUID_KEY = "lianjia_uuid";
+    private static final String UUID_VALUE = "fe547e4f-b83f-49be-9708-5af2d41ebef4";
     private String areaName;
 
     public Spider(String areaName) {
@@ -27,7 +30,7 @@ public class Spider implements Runnable {
     }
 
     public static void main(String[] args) throws IOException {
-        Document document = Jsoup.connect(URL).cookie("lianjia_uuid", "fe547e4f-b83f-49be-9708-5af2d41ebef4").get();
+        Document document = Jsoup.connect(URL).cookie(UUID_KEY, UUID_VALUE).get();
         Elements elements = document.select("div[data-role=ershoufang]").first().select("a");
         for (Element element : elements) {
             String areaName = element.attr("href").replaceAll("(ershoufang|/)", "");

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #bbbbbb;
+        }
+
+        #main {
+            height: 600px;
+            width: 1000px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="main"></div>
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        legend: {
+            data: ['最高价', '最低价', '平均价']
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: ['东城', '西城', '朝阳', '海淀', '大兴', '房山', '丰台','门头沟','密云','平谷','石景山','顺义','通州','燕郊','延庆','亦庄开发区']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '最高价',
+                type: 'bar',
+                data: [320, 332, 301, 334, 390, 330, 320]
+            },
+            {
+                name: '最低价',
+                type: 'bar',
+                data: [220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name: '平均价',
+                type: 'bar',
+                data: [862, 1018, 964, 1026, 1679, 1600, 1570]
+            }
+        ]
+    };
+
+    myChart.setOption(option);
+</script>
+</body>
+</html>
