@@ -1,4 +1,4 @@
-package java1702.javase.multitherading;
+package java1702.javase.multithreading;
 
 /**
  * Created by 高伟冬 on 2017/5/10.

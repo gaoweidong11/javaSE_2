@@ -16,6 +16,7 @@ import java.net.SocketTimeoutException;
  * 9:15
  * 星期四
  */
+//链家 房产
 public class Spider implements Runnable {
 
 //    private static final String[] CITIES = {"bj", "tj"};
